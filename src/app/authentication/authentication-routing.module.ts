@@ -6,6 +6,8 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { LockedComponent } from './locked/locked.component';
 import { Page404Component } from './page404/page404.component';
 import { Page500Component } from './page500/page500.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -20,10 +22,17 @@ const routes: Routes = [
     path: 'signup',
     component: SignupComponent
   },
+  
   {
     path: 'forgot-password',
     component: ForgotPasswordComponent
   },
+
+  {
+    path: 'reset-password',
+    component: ResetPasswordComponent
+  },
+
   {
     path: 'locked',
     component: LockedComponent

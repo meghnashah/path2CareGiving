@@ -6,12 +6,13 @@ import {
   UntypedFormGroup,
   Validators,
 } from '@angular/forms';
+
 @Component({
-  selector: 'app-forgot-password',
-  templateUrl: './forgot-password.component.html',
-  styleUrls: ['./forgot-password.component.scss'],
+  selector: 'app-reset-password',
+  templateUrl: './reset-password.component.html',
+  styleUrls: ['./reset-password.component.scss']
 })
-export class ForgotPasswordComponent implements OnInit {
+export class ResetPasswordComponent implements OnInit {
   loginForm!: UntypedFormGroup;
   submitted = false;
   constructor(
@@ -36,7 +37,8 @@ export class ForgotPasswordComponent implements OnInit {
     if (this.loginForm.invalid) {
       return;
     } else {
-      this.router.navigate(['authentication/reset-password']);
+      this.router.navigate(['/dashboard/main']);
     }
   }
 }
+

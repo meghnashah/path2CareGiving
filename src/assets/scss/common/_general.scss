@@ -10,7 +10,7 @@ body.light {
 
 body {
   @include transition(all 0.5s);
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter";
   font-size: 14px;
 }
 
@@ -25,6 +25,7 @@ body {
 ul li {
   list-style-type: none;
 }
+ 
 
 button,
 input,
