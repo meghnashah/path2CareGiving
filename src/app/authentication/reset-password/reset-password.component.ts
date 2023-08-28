@@ -15,6 +15,14 @@ import {
 export class ResetPasswordComponent implements OnInit {
   loginForm!: UntypedFormGroup;
   submitted = false;
+  showIcon = true;
+  showIcon2 = true;
+  toggleIcon1() {
+    this.showIcon = !this.showIcon;
+  }
+  toggleIcon2() {
+    this.showIcon2 = !this.showIcon2;
+  }
   constructor(
     private formBuilder: UntypedFormBuilder,
     private route: ActivatedRoute,

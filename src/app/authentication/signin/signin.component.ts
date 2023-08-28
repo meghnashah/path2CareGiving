@@ -21,6 +21,10 @@ export class SigninComponent
   submitted = false;
   error = '';
   hide = true;
+  showIcon = true;
+  toggleIcon() {
+    this.showIcon = !this.showIcon;
+  }
   constructor(
     private formBuilder: UntypedFormBuilder,
     private router: Router,
@@ -43,6 +47,7 @@ export class SigninComponent
   }
   onSubmit() {
     this.submitted = true;
+    
     this.error = '';
     if (this.loginForm.invalid) {
       this.error = 'Username and Password not valid !';
@@ -67,6 +72,7 @@ export class SigninComponent
           }
         );
     }
-  }
+  }   
+ 
      
 }
