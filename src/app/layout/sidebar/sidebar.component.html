@@ -5,7 +5,7 @@
     <div class="menu">
       <ng-scrollbar [style.height]="listMaxHeight + 'px'" visibility="hover">
         <ul id="sidebarnav" class="list">
-          <li class="sidebar-user-panel">
+          <!-- <li class="sidebar-user-panel">
             <div class="user-panel">
               <div class=" image">
                 <img src="assets/images/usrbig.jpg" class="img-circle user-img-circle" alt="User Image" />
@@ -15,7 +15,7 @@
               <div class="sidebar-userpic-name"> Emily Smith </div>
               <div class="profile-usertitle-job ">{{'MENUITEMS.USER.POST' | translate}} </div>
             </div>
-          </li>
+          </li> -->
           <!-- Top Most level menu -->
           <li *ngFor="let sidebarItem of sidebarItems"
             [routerLinkActive]="sidebarItem.submenu.length !== 0 ? 'active' : 'active-top'">
@@ -27,7 +27,7 @@
               <span class="hide-menu">{{sidebarItem.title | translate}}
               </span>
             </a>
-            <!-- First level menu -->
+          
             <ul class="ml-menu" *ngIf="sidebarItem.submenu.length > 0">
               <li *ngFor="let sidebarSubItem1 of sidebarItem.submenu"
                 [routerLinkActive]="sidebarSubItem1.submenu.length > 0 ? '' : 'active'">
@@ -35,7 +35,7 @@
                   (click)="callToggleMenu($event,sidebarSubItem1.submenu.length)" [ngClass]="[sidebarSubItem1.class]">
                   {{sidebarSubItem1.title | translate}}
                 </a>
-                <!-- Second level menu -->
+              
                 <ul class="ml-menu-2" *ngIf="sidebarSubItem1.submenu.length > 0">
                   <li *ngFor="let sidebarSubItem2 of sidebarSubItem1.submenu"
                     [routerLinkActive]="sidebarSubItem2.submenu.length > 0 ? '' : 'active'">
@@ -44,7 +44,7 @@
                       [ngClass]="[sidebarSubItem2.class]">
                       {{sidebarSubItem2.title | translate}}
                     </a>
-                    <!-- Third level menu -->
+                  
                     <ul class="ml-menu-3" *ngIf="sidebarSubItem2.submenu.length > 0">
                       <li *ngFor="let sidebarSubItem3 of sidebarSubItem2.submenu"
                         [routerLinkActive]="sidebarSubItem3.submenu.length > 0 ? '' : 'active'">
@@ -60,7 +60,11 @@
               </li>
             </ul>
           </li>
+
+         <li> <button   class="sign-out-btn"> <app-feather-icons [icon]="'log-out'" [class]="'user-menu-icons mr-3'"></app-feather-icons>Sign in</button></li>
         </ul>
+
+       
       </ng-scrollbar>
     </div>
     <!-- #Menu -->

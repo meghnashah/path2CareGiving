@@ -10,24 +10,27 @@
       </a>
     </div>
     <div class="collapse navbar-collapse" [ngClass]="isNavbarCollapsed ? '' : 'show'">
-      <ul class="pull-left collapse-menu-icon">
+      <!-- <ul class="pull-left collapse-menu-icon">
         <li class="menuBtn">
           <button mat-button (click)="callSidemenuCollapse()" class="sidemenu-collapse nav-notification-icons">
             <app-feather-icons [icon]="'menu'" [class]="'header-icon'"></app-feather-icons>
           </button>
         </li>
-      </ul>
+      </ul> -->
       <ul class="nav navbar-nav navbar-right">
         <!-- Full Screen Button -->
-        <li class="fullscreen">
+        <!-- <li class="fullscreen">
           <button mat-button class="nav-notification-icons" (click)="callFullscreen()">
             <app-feather-icons [icon]="'maximize'" [class]="'header-icon'"></app-feather-icons>
           </button>
-        </li>
+        </li> -->
         <!-- #END# Full Screen Button -->
         
         <!-- #START# Notifications-->
-       
+        <li class="nav-item profile-info"> 
+              <h4 class="text--1A1A1A  fw-600 font-16">Hello, Chris Johnson</h4>
+              <span class="text--919AA3 fw-400 font-12 text-right">(System Admin)</span> 
+        </li>
         <!-- #END# Notifications-->
         <li class="nav-item user_profile">
           <button mat-button [matMenuTriggerFor]="profilemenu">

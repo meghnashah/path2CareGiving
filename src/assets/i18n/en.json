@@ -41,44 +41,7 @@
         "COMPOSE": "Compose",
         "READ": "Read Email"
       }
-    },
-    "MORE-APPS": {
-      "TEXT": "More Apps",
-      "LIST": {
-        "CHAT": "Chat",
-        "SUPPORT": "Support",
-        "DRAG-DROP": "Drag & Drop",
-        "CONTACT-GRID": "Contact Grid"
-      }
-    },
-    "COMPONENTS": {
-      "TEXT": "-- Components"
-    },
-    "WIDGETS": {
-      "TEXT": "Widgets",
-      "LIST": {
-        "CHART-WIDGET": "Chart-Widget",
-        "DATA-WIDGET": "Data-Widget"
-      }
-    },
-    "FORMS": {
-      "TEXT": "Forms",
-      "LIST": {
-        "CONTROLS": "Form Controls",
-        "ADVANCE": "Advance Control",
-        "EXAMPLE": "Form Examples",
-        "VALIDATION": "Form Validation",
-        "WIZARD": "Wizard",
-        "EDITORS": "Editors"
-      }
-    },
-    "TABLES": {
-      "TEXT": "Tables",
-      "LIST": {
-        "BASIC": "Basic Tables",
-        "MATERIAL": "Material Tables",
-        "NGX-DATATABLE": "NGX-Datatable"
-      }
-    }
+    } 
+   
   }
 }

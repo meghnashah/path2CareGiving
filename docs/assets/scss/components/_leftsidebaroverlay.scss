@@ -124,7 +124,7 @@
         cursor: pointer;
         &.active {
           .menu-top {
-            background-color: #f0f3fb;
+            background-color: #4C9CD4;
           }
           > :first-child {
             span {
@@ -134,10 +134,12 @@
         }
         &.active-top {
           .menu-top {
-            background-color: #f0f3fb;
+            background-color: #4C9CD4;
           }
         }
       }
+
+   
 
       .header {
         font-size: 13px;
@@ -172,7 +174,7 @@
 
       .active {
         .menu-toggle {
-          background-color: #f0f3fb;
+          background-color: #4C9CD4;
         }
 
         .ml-menu {
@@ -754,7 +756,7 @@
         }
       }
       .active .menu-toggle {
-        background: #f0f3fb;
+        background: #4C9CD4;
         color: $theme-white-active-color;
       }
 
