@@ -8,9 +8,7 @@
     "USER":{
       "POST": "Manager"
     },
-    "MAIN": {
-      "TEXT": "-- Main"
-    },
+    
     "HOME": {
       "TEXT": "Zuhause",
       "LIST": {

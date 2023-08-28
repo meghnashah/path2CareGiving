@@ -27,7 +27,7 @@
 .sidebar {
   @include transition(all 0.5s);
   font-family: $sidebar-font-family;
-  background: #ffffff;
+  background: #DBE7F0;
   width: 260px;
   overflow: hidden;
   display: inline-block;
@@ -124,7 +124,7 @@
         cursor: pointer;
         &.active {
           .menu-top {
-            background-color: #f0f3fb;
+            background-color: #4C9CD4;
           }
           > :first-child {
             span {
@@ -134,7 +134,7 @@
         }
         &.active-top {
           .menu-top {
-            background-color: #f0f3fb;
+            background-color: #4C9CD4;
           }
         }
       }
@@ -172,7 +172,7 @@
 
       .active {
         .menu-toggle {
-          background-color: #f0f3fb;
+          background-color: #4C9CD4;
         }
 
         .ml-menu {
@@ -288,15 +288,16 @@
       }
 
       a {
-        color: #000000;
+        color: #1A1A1A;
         position: relative;
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 600;
         display: block;
         overflow: hidden;
         line-height: 2rem;
         padding: 9px 9px 9px 18px;
-        margin: 8px 13px 0px 9px;
-        border-radius: 0.5rem;
+        margin: 8px 0px 0px 0px;
+        border-radius: 0rem;
 
         &:hover,
         &:active,
@@ -754,7 +755,7 @@
         }
       }
       .active .menu-toggle {
-        background: #f0f3fb;
+        background: #4C9CD4;
         color: $theme-white-active-color;
       }
 
