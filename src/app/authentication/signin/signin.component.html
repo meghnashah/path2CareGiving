@@ -25,34 +25,38 @@
                         <input type="email" formControlName="email" class="form-control auth-control" id="email"
                           placeholder="Email" [ngClass]="{ 'is-invalid': submitted && form['email'].errors }">
                         <div *ngIf="submitted && form['email'].errors" class="invalid-feedback">
-                          <div *ngIf="form['email'].errors['required']">Email is required</div>
-                          <div *ngIf="form['email'].errors['email']">Email must be a valid email address</div>
+                          <div *ngIf="form['email'].errors['required']">
+                            <mat-icon class="mat-info-icon">info</mat-icon><span class="aligned-with-icon">Email is required</span>
+                            </div>
+                          <div *ngIf="form['email'].errors['email']"><mat-icon class="mat-info-icon">info</mat-icon><span class="aligned-with-icon"> Email must be a valid email address</span>
+                           </div>
                         </div>
                       </div>
 
                       <label class="form-label">Password</label>
-                      <div class="form-group auth-form-group mb-4"> 
+                      <div class="form-group auth-form-group mb-4">
+                             
                         <input type="password" formControlName="password" class="form-control auth-control"
                           id="password" [ngClass]="{ 'is-invalid': submitted && form['password'].errors }"
-                          placeholder="Password" />
-                        
+                          placeholder="Password" /> 
+                            <mat-icon  class="pwd-icon"  >remove_red_eye</mat-icon>  
                         <div *ngIf="submitted && form['password'].errors" class="invalid-feedback">
-                          <div *ngIf="form['password'].errors['required']">Password is required</div>
+                          <div *ngIf="form['password'].errors['required']">	<mat-icon class="mat-info-icon">info</mat-icon><span class="aligned-with-icon">Password is required</span></div>
                         </div>
                       </div>
 
-                     
+                      
                       <div class="flex-sb-m w-full   p-b-20">
                         <div class="form-check">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value=""> Remember me
+                          <label class="form-check-label font-16 text--919AA3">
+                            <input class="form-check-input " type="checkbox" value=""> Remember me
                             <span class="form-check-sign">
                               <span class="check"></span>
                             </span>  
                           </label>
                         </div>
                         <div>
-                          <a class="txt1 text-decoration-underline" routerLink="/authentication/forgot-password">Forgot Password?</a>
+                          <a class="text--919AA3 text-decoration-underline font-16" routerLink="/authentication/forgot-password" >Forgot Password?</a>
                         </div>
                       </div>
 
@@ -72,7 +76,10 @@
       </div>
       <div class="col-lg-6">
         <div class="auth-bg">
-          <div class="bg-overlay"></div>
+          <div class="bottom-text">
+            <h3 class="text-fff font-36 font-weight-medium text-center">Advancing the Care Continuum</h3>
+            <p class="text-fff font-18 fw-400 text-center mt-3" >PATH is a freely accessible, evidence-based assessment tool that is designed to assess caregiver’s preparedness to transition patients home.</p>
+          </div>
         </div>
       </div>
     </div>
