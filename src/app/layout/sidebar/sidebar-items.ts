@@ -3,7 +3,7 @@ import { RouteInfo } from './sidebar.metadata';
 export const ROUTES: RouteInfo[] = [
   
   {
-    path: 'dashboard/main',
+    path: 'dashboard/dashboard-day1',
     title: 'Dashboard',
     icon: 'grid',
     class: '',

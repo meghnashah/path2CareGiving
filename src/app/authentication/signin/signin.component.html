@@ -35,19 +35,14 @@
                       </div>
 
                       <label class="form-label">Password</label>
-                      <div class="form-group auth-form-group mb-4">
-                             
+                      <div class="form-group auth-form-group mb-4"> 
                         <input type="password" formControlName="password" class="form-control auth-control"
                           id="password" [ngClass]="{ 'is-invalid': submitted && form['password'].errors }"
-                          placeholder="Password" /> 
-
-                      
-                            <mat-icon class="pwd-icon" (click)="toggleIcon()">{{ showIcon ? 'visibility' : 'visibility_off' }}</mat-icon>
-                         
-                            <!-- <mat-icon  class="pwd-icon"  >remove_red_eye</mat-icon>   -->
-                        <div *ngIf="submitted && form['password'].errors" class="invalid-feedback">
-                          <div *ngIf="form['password'].errors['required']">	<mat-icon class="mat-info-icon">info</mat-icon><span class="aligned-with-icon">Password is required</span></div>
-                        </div>
+                          placeholder="Password" />  
+                            <mat-icon class="pwd-icon" (click)="toggleIcon()">{{ showIcon ? 'visibility' : 'visibility_off' }}</mat-icon> 
+                          <div *ngIf="submitted && form['password'].errors" class="invalid-feedback">
+                            <div *ngIf="form['password'].errors['required']">	<mat-icon class="mat-info-icon">info</mat-icon><span class="aligned-with-icon">Password is required</span></div>
+                          </div>
                       </div>
 
                       

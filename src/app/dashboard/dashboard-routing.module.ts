@@ -7,11 +7,11 @@ import { Dashboard3Component } from './dashboard3/dashboard3.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'main',
+    redirectTo: 'dashboard-day1',
     pathMatch: 'full',
   },
   {
-    path: 'main',
+    path: 'dashboard-day1',
     component: MainComponent,
   },
   {

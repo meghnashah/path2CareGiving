@@ -1,0 +1,15 @@
+.background-image {
+    // background-image: url('../../images/banner-image/right-img.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust as needed */
+  }
+  
+.container-fluid{
+    .counter-box{
+        img{
+            max-width: 132% !important;
+        }
+    }
+}
