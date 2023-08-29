@@ -11,7 +11,7 @@ export const ROUTES: RouteInfo[] = [
     submenu: []
   },
   {
-    path: 'dashboard/dashboard2',
+    path: 'dashboard/admin_dashboard',
     title: 'User Management',
     icon: 'user',
     class: '',

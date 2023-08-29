@@ -1,15 +1,38 @@
-.background-image {
-    // background-image: url('../../images/banner-image/right-img.svg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100vh; /* Adjust as needed */
-  }
+
   
 .container-fluid{
     .counter-box{
         img{
             max-width: 132% !important;
         }
+    }
+    .invite-user{
+        text-align: center;
+        position: absolute;
+        top: 53%;
+        left: 57%;
+        margin: -50px 0 0 -50px;
+        
+    }
+}
+
+/* (1366x768) WXGA Display */
+@media  screen and (max-width: 1366px) {
+    .invite-user{
+        left: 57% !important;
+    }
+}
+
+/* (768x1024) iPad 1 & 2, Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .invite-user{
+        left: 20% !important;
+    }
+}
+
+/* (1024x768) iPad 1 & 2, XGA */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .invite-user{
+        left: 48% !important;
     }
 }

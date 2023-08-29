@@ -15,7 +15,7 @@ const routes: Routes = [
     component: MainComponent,
   },
   {
-    path: 'dashboard2',
+    path: 'admin_dashboard',
     component: Dashboard2Component,
   },
   {
