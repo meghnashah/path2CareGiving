@@ -33,8 +33,9 @@
   display: inline-block;
   height: calc(100vh - 60px);
   position: fixed;
-  top: 60px;
+  top: 66px;
   left: 0;
+  border-right: 1px solid #E7E8F2;
   //  @include box-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
   z-index: 999 !important;
 
@@ -125,6 +126,7 @@
         &.active {
           .menu-top {
             background-color: #4C9CD4;
+            border-left: 7px solid #9454A4;
           }
           > :first-child {
             span {
@@ -135,6 +137,7 @@
         &.active-top {
           .menu-top {
             background-color: #4C9CD4;
+            border-left: 7px solid #9454A4;
           }
         }
       }

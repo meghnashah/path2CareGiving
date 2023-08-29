@@ -135,7 +135,7 @@
 }
 
 .navbar-header {
-  padding: 8px;
+  padding: 9px 0px;
   width: 260px;
   @include transition(all 0.5s);
 
@@ -320,9 +320,9 @@
   border-radius: 3px;
 }
 .navbar-brand {
-  float: left;
+  // float: left;
   height: 45px;
-  padding: 6px 25px;
+  // padding: 6px 25px;
   font-size: 18px;
   line-height: 20px;
   text-align: center;
