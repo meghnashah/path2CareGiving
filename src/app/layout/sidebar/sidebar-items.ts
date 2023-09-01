@@ -22,16 +22,16 @@ export const ROUTES: RouteInfo[] = [
     path: ' ',
     title: 'Manage Library',
     icon: 'layers',
-    class: '',
+    class: 'contacts',
     groupTitle: false,
     submenu: []
   },
   {
     path: ' ',
-    title: 'My Profile',
-    icon: 'user',
+    title: 'My Profile', 
+    icon: 'user-check',
     class: '',
-    groupTitle: false,
+    groupTitle: false, 
     submenu: []
   },
   

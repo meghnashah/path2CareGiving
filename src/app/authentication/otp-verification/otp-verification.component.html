@@ -1,0 +1,77 @@
+<div class="container-fluid p-0">
+    <div class="row g-0">
+      <div class="col-lg-6">
+        <div class="auth-content p-4 d-flex align-items-center min-vh-100">
+          <div class="w-100">
+            <div class="row justify-content-center">
+              <div class="col-lg-9">
+                <div> 
+                      <div class="text-left p-2">
+                        <img src="assets/images/banner-image/ark_logo-Big_onboarding.svg" alt="logo-full">
+                      
+                       <div class="mt-5">
+                         <h4 class="font-18 text--1A1A1A fw-600 mt-4">Verify Your Email</h4>
+                         <p class="font-14 fw-400 text--1A1A1A">Enter verification code sent on email-<span class="fw-600 text--1A1A1A font-14">chrisjohnson@gmail.com</span></p>
+                      </div>
+                  </div>
+  
+                  <div class="p-2">
+                    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                     
+                      <div class="form-group auth-form-group mb-4">
+                        
+                        <input type="email" formControlName="email" class="form-control auth-control" id="email"
+                          placeholder="Email" [ngClass]="{ 'is-invalid': submitted && form['email'].errors }">
+                          
+                        <div *ngIf="submitted && form['email'].errors" class="invalid-feedback">
+                          <div *ngIf="form['email'].errors['required']">
+                            <mat-icon class="mat-info-icon">info</mat-icon><span class="aligned-with-icon">Email is required</span>
+                            </div>
+                          <div *ngIf="form['email'].errors['email']">
+                            <mat-icon class="mat-info-icon">info</mat-icon><span class="aligned-with-icon">Email must be a valid email address</span>
+                              </div>
+                        </div>
+                      </div>
+
+                      <div class="text-center mb-3"> 
+                        <span class="font-16 fw-400 text--919AA3">Don’t receive OTP? <a routerLink="/authentication/signin" class="text-decoration-underline font-weight-medium  clr--9454A4 font-16 fw-400" >
+                            Resend </a> </span>
+                      </div>
+  
+                      <div class="container-login100-form-btn">
+                        <button mat-raised-button color="primary" class="login100-form-btn font-18 fw-600"   >
+                            Verify & Submit
+                        </button>
+                      </div>
+  
+                    </form>
+
+                   
+                  </div>
+  
+                  <div class="mt-2 text-center d-flex justify-content-center"> 
+                    <mat-icon class="material-icons" >arrow_back</mat-icon>
+                    <span routerLink="/authentication/signin"  class="text-decoration-underline font-weight-medium icon-name  clr--9454A4  font-16 fw-400">Change email</span>  
+                  </div>
+
+                  
+
+
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="auth-bg">
+          <div class="bottom-text">
+            <h3 class="text-fff font-36 font-weight-medium text-center">Advancing the Care Continuum</h3>
+            <p class="text-fff font-18 fw-400 text-center mt-3" >PATH is a freely accessible, evidence-based assessment tool that is designed to assess caregiver’s preparedness to transition patients home.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

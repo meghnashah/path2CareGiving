@@ -5,6 +5,9 @@
         img{
             max-width: 132% !important;
         }
+
+        
+        
     }
     .invite-user{
         text-align: center;
@@ -14,6 +17,22 @@
         margin: -50px 0 0 -50px;
         
     }
+    .counter-box-1{
+        border-radius: 9.118px;
+        border: 0.912px solid #4C9CD4;
+        background: rgba(76, 156, 212, 0.08);
+    }
+    .counter-box-2{
+        border-radius: 9.118px;
+        border: 0.912px solid #A46CB4;
+        background: rgba(164, 108, 180, 0.08);
+    }
+    .counter-box-3{
+        border-radius: 9.118px;
+        border: 0.912px solid #3DD598;
+        background: rgba(61, 213, 152, 0.08);
+    }
+
 }
 
 /* (1366x768) WXGA Display */

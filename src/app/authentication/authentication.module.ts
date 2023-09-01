@@ -12,6 +12,7 @@ import { SignupComponent } from './signup/signup.component';
 import { LockedComponent } from './locked/locked.component';
 import { Page500Component } from './page500/page500.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { OtpVerificationComponent } from './otp-verification/otp-verification.component';
  
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
     SignupComponent,
     LockedComponent,
     ForgotPasswordComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    OtpVerificationComponent
   ],
   imports: [
     CommonModule,

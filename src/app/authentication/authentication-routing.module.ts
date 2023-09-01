@@ -7,6 +7,7 @@ import { LockedComponent } from './locked/locked.component';
 import { Page404Component } from './page404/page404.component';
 import { Page500Component } from './page500/page500.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { OtpVerificationComponent } from './otp-verification/otp-verification.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,18 @@ const routes: Routes = [
   {
     path: 'forgot-password',
     component: ForgotPasswordComponent
+  },
+
+  {
+    path: 'otp-verification',
+    component: OtpVerificationComponent
+  },
+
+  
+
+  {
+    path: 'reset-password',
+    component: ResetPasswordComponent
   },
 
   {
