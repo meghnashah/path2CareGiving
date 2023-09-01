@@ -20,21 +20,22 @@
                      
                       <div class="form-group auth-form-group mb-4">
                         
-                        <input type="email" formControlName="email" class="form-control auth-control" id="email"
-                          placeholder="Email" [ngClass]="{ 'is-invalid': submitted && form['email'].errors }">
+                        <input type="otp" formControlName="otp" class="form-control auth-control" id="otp"
+                          placeholder="Enter 6-digit OTP" [ngClass]="{ 'is-invalid': submitted && form['otp'].errors }">
                           
-                        <div *ngIf="submitted && form['email'].errors" class="invalid-feedback">
-                          <div *ngIf="form['email'].errors['required']">
-                            <mat-icon class="mat-info-icon">info</mat-icon><span class="aligned-with-icon">Email is required</span>
+                        <div *ngIf="submitted && form['otp'].errors" class="invalid-feedback">
+                          <div *ngIf="form['otp'].errors['required']">
+                            
+                            <mat-icon class="mat-info-icon">info</mat-icon><span class="aligned-with-icon">OTP is required</span>
                             </div>
-                          <div *ngIf="form['email'].errors['email']">
-                            <mat-icon class="mat-info-icon">info</mat-icon><span class="aligned-with-icon">Email must be a valid email address</span>
+                          <div *ngIf="form['otp'].errors['otp']">
+                            <mat-icon class="mat-info-icon">info</mat-icon><span class="aligned-with-icon">Enter Valid OTP</span>
                               </div>
                         </div>
                       </div>
 
                       <div class="text-center mb-3"> 
-                        <span class="font-16 fw-400 text--919AA3">Don’t receive OTP? <a routerLink="/authentication/signin" class="text-decoration-underline font-weight-medium  clr--9454A4 font-16 fw-400" >
+                        <span class="font-16 fw-400 text--919AA3" routerLink="/authentication/reset-password"  >Don’t receive OTP? <a routerLink="/authentication/signin" class="text-decoration-underline font-weight-medium  clr--9454A4 font-16 fw-400" >
                             Resend </a> </span>
                       </div>
   
@@ -49,8 +50,8 @@
                    
                   </div>
   
-                  <div class="mt-2 text-center d-flex justify-content-center"> 
-                    <mat-icon class="material-icons" >arrow_back</mat-icon>
+                  <div class="mt-2 text-center d-flex justify-content-center change-email"> 
+                    <mat-icon class="material-icons clr--9454A4" >arrow_back</mat-icon>
                     <span routerLink="/authentication/signin"  class="text-decoration-underline font-weight-medium icon-name  clr--9454A4  font-16 fw-400">Change email</span>  
                   </div>
 

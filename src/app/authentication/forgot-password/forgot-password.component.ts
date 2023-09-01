@@ -36,7 +36,7 @@ export class ForgotPasswordComponent implements OnInit {
     if (this.loginForm.invalid) {
       return;
     } else {
-      this.router.navigate(['authentication/reset-password']);
+      this.router.navigate(['authentication/otp-verification']);
     }
   }
 }
