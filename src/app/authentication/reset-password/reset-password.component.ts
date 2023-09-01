@@ -64,7 +64,7 @@ implements OnInit
             if (res) {
               const token = this.authService.currentUserValue.token;
               if (token) {
-                this.router.navigate(['/dashboard/dashboard-day1']);
+                this.router.navigate(['authentication/reset-password']);
               }
             } else {
               this.error = 'Invalid Login';
