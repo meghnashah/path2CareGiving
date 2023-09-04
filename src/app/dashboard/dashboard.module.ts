@@ -12,9 +12,10 @@ import { NgScrollbarModule } from 'ngx-scrollbar';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { ComponentsModule } from '../shared/components/components.module';
 import { SharedModule } from './../shared/shared.module';
+import { MyProfileComponent } from './my-profile/my-profile.component';
 
 @NgModule({
-  declarations: [MainComponent, Dashboard2Component, Dashboard3Component],
+  declarations: [MainComponent, Dashboard2Component, Dashboard3Component, MyProfileComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,

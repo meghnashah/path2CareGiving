@@ -1,0 +1,135 @@
+<section class="content">
+    <div class="container-fluid"><br>
+     <div class="Profile-content">
+        <div class="row">
+            <div class="col-1">
+                <img src="assets/images/dashbord/profile-img.png" alt="" />  
+            </div>
+            <div class="col-11 pl-0 pr-0">
+                <h3 class="font-16 text--1A1A1A fw-600">Chris Johnson</h3>
+                    <span class="font-14 text--1A1A1A  d-flex"> 
+                    <mat-icon class="material-icons " >mail</mat-icon> chris42@gmail.com</span>
+            </div>
+        </div> 
+     </div>
+     
+
+      <mat-tab-group class="mt-3">
+        <mat-tab label="Basic Information" >
+            <div class="m-4" *ngIf="isDiv1Visible">
+                <div class="d-flex justify-content-between p-0 mt-3">
+                    <div >
+                        <strong>Email ID </strong>
+                        <br>
+                        <p class="text-muted">chrisj42@gmail.com</p>
+                      </div>
+                      <div >
+                        <mat-icon (click)="toggleDivs()" class="clr--4C9CD4 ">edit</mat-icon>
+                     </div>
+                </div> 
+                <div class="row mt-3"  >
+                    <div class="col-md-2 col-6 b-r">
+                      <strong>First Name  </strong>
+                      <br>
+                      <p class="text-muted">Chris</p>
+                    </div>
+                    <div class="col-md-2 col-6 b-r">
+                      <strong>Last Name</strong>
+                      <br>
+                      <p class="text-muted">Johnson</p>
+                    </div> 
+                </div> 
+            </div>
+            
+
+
+            <form class="register-form m-4" *ngIf="isDiv2Visible" [formGroup]="register!" (ngSubmit)="onRegister()">                       
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                    <mat-form-field class="example-full-width disable-field" appearance="outline">
+                        <mat-label class="custom-label">chrisjohnson@gmail.com</mat-label>
+                        <input matInput disabled>
+                      </mat-form-field> 
+                  </div>
+  
+  
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">                   
+                      <mat-form-field class="example-full-width" appearance="outline" hideRequiredMarker>
+                        <mat-label class="custom-label" class="custom-label">First name</mat-label>
+                        <input matInput formControlName="password" [type]="hide ? 'password' : 'text'" required>                         
+                        <mat-error *ngIf="secondForm?.get('first')?.hasError('required')">
+                          First name is required
+                        </mat-error>
+                      </mat-form-field>
+                </div>
+  
+  
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                    <mat-form-field class="example-full-width" appearance="outline" hideRequiredMarker>
+                        <mat-label class="custom-label">Last name</mat-label>
+                        <input matInput formControlName="password" [type]="hide ? 'password' : 'text'" required>                         
+                        <mat-error *ngIf="secondForm?.get('first')?.hasError('required')">
+                          Last name is required
+                        </mat-error>
+                      </mat-form-field>
+                </div> 
+                
+                <div class="row d-flex justify-content-end"> 
+                    <button color="primary" class="login100-form-btn font-16 fw-600"   [disabled]="!register?.valid" mat-raised-button
+                      >Save </button>  
+                </div>
+             </form> 
+        </mat-tab>
+        <mat-tab label="Change Password">   
+            <form class="register-form m-4" [formGroup]="register!" (ngSubmit)="onRegister()">                       
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                <mat-form-field class="example-full-width " appearance="outline" hideRequiredMarker>
+                  <mat-label class="custom-label">Current Password</mat-label>
+                  <input matInput formControlName="password" [type]="hide ? 'password' : 'text'" required>
+                  <mat-icon matSuffix (click)="hide = !hide">
+                    {{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  <mat-error *ngIf="register?.get('password')?.hasError('required')">
+                    Password is required
+                  </mat-error>
+                </mat-form-field>
+              </div>
+
+
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                <mat-form-field class="example-full-width" appearance="outline" hideRequiredMarker>
+                    <mat-label class="custom-label">New Password</mat-label>
+                    <input matInput formControlName="password" [type]="hide ? 'password' : 'text'" required>
+                    <mat-icon matSuffix (click)="hide = !hide">
+                      {{hide ? 'visibility_off' : 'visibility'}}
+                    </mat-icon>
+                    <mat-error *ngIf="register?.get('password')?.hasError('required')">
+                      Password is required
+                    </mat-error>
+                  </mat-form-field>
+                  
+              </div>
+
+
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                <mat-form-field class="example-full-width" appearance="outline" hideRequiredMarker>
+                  <mat-label class="custom-label">Confirm Password</mat-label>
+                  <input matInput formControlName="password" [type]="hide ? 'password' : 'text'" required>
+                  <mat-icon matSuffix (click)="hide = !hide">
+                    {{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  <mat-error *ngIf="register?.get('password')?.hasError('required')">
+                    Password is required
+                  </mat-error>
+                </mat-form-field>
+              </div> 
+              
+            <div class="row d-flex justify-content-end"> 
+                <button color="primary" class="login100-form-btn font-16 fw-600"   [disabled]="!register?.valid" mat-raised-button
+                  >Change Password</button>  
+            </div>
+           </form> 
+        </mat-tab> 
+      </mat-tab-group>
+    
+      
+    </div>
+  </section>
+   

@@ -1,0 +1,70 @@
+.container-fluid{
+    margin-top: 10px;
+    .Profile-content{ 
+        border-radius: 6px;
+        background: linear-gradient(101deg, #B8D8EE -0.46%, #C5C7FA 49.77%, #DFACEC 84.3%);
+        padding: 15px;
+        .img{
+            width: 84px;
+            height: 84px;
+            flex-shrink: 0;
+        }
+        .material-icons {
+            font-size: 20px !important;
+        }
+    }
+    .login100-form-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        width: 200px !important;
+        height: 50px !important;
+        border-radius: 8px !important;
+        background: #9155A3 !important;
+        font-family: Inter;
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        color: #fff !important;
+        line-height: 1.2; 
+        letter-spacing: 1px;
+        box-shadow: none !important;
+        cursor: pointer;
+        transition: all 0.4s;
+        &:hover {
+          background: #333333;
+        }
+      }
+  
+      
+}
+
+ 
+::ng-deep .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label{
+    font-size: 16px;
+    color: #1A1A1A !important;    
+    font-weight: 600;
+}
+ 
+::ng-deep .mat-mdc-tab .mdc-tab__text-label {
+    font-size: 16px;
+    color: #919AA3 !important;    
+    font-weight: 600;
+}
+
+.custom-label {
+    color: #1A1A1A; 
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400; 
+  }
+
+  .disable-field{
+    .mat-mdc-text-field-wrapper{
+        border-radius: 8px;
+        border: 1px solid #A7A9C0;
+        background: #F5F5F5;
+    }
+  }
+
+ 
