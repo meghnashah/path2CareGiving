@@ -27,7 +27,7 @@ export const ROUTES: RouteInfo[] = [
     submenu: []
   },
   {
-    path: 'dashboard/my-profile',
+    path: 'dashboard/myprofile',
     title: 'My Profile', 
     icon: 'user-check',
     class: '',
